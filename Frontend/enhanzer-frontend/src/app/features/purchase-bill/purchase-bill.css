@@ -1,0 +1,264 @@
+/* Main Page */
+.purchase-page {
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+}
+
+/* Page Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    color: #243447;
+}
+
+.page-header p {
+    margin: 0;
+    color: #788494;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.2s ease;
+}
+
+.btn-secondary {
+    padding: 10px 22px;
+    background: white;
+    border: 1px solid #d8dee8;
+    border-radius: 6px;
+    color: #344054;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background: #edf1f7;
+}
+
+.btn-primary {
+    padding: 12px 22px;
+    background: #2563eb;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+/* Navigation Tabs */
+.tabs {
+    display: flex;
+    gap: 25px;
+    border-bottom: 1px solid #dfe4ec;
+    margin-bottom: 25px;
+}
+
+.tab {
+    padding: 12px 5px;
+    border: none;
+    background: transparent;
+    color: #778394;
+    font-size: 15px;
+}
+
+.tab.active {
+    color: #2563eb;
+    font-weight: 600;
+    border-bottom: 3px solid #2563eb;
+}
+
+/* Form and Table Sections */
+.form-section,
+.table-section,
+.summary-section {
+    background: white;
+    padding: 25px;
+    border: 1px solid #e5eaf1;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.form-section h2,
+.table-section h2,
+.summary-section h2 {
+    margin: 0 0 22px;
+    font-size: 18px;
+    color: #263648;
+}
+
+/* Item Form */
+.item-form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475467;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background: white;
+    color: #344054;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.form-group input[readonly] {
+    background: #f1f5f9;
+    color: #667085;
+}
+
+.button-group {
+    justify-content: flex-end;
+}
+
+/* Purchase Items Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+thead {
+    background: #f1f5f9;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e8edf3;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+th {
+    color: #475467;
+    font-weight: 600;
+}
+
+td {
+    color: #344054;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.empty-message {
+    padding: 30px;
+    text-align: center;
+    color: #98a2b3;
+}
+
+/* Bill Summary */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background: #f8fafc;
+    border: 1px solid #e5eaf1;
+    border-radius: 8px;
+}
+
+.summary-card span {
+    font-size: 13px;
+    color: #667085;
+}
+
+.summary-card strong {
+    font-size: 23px;
+    color: #2563eb;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .item-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .purchase-page {
+        padding: 15px;
+    }
+
+    .page-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 23px;
+    }
+
+    .item-form {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section,
+    .table-section,
+    .summary-section {
+        padding: 17px;
+    }
+}

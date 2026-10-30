@@ -1,1 +1,196 @@
-<p>purchase-bill works!</p>
+<div class="purchase-page">
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div>
+            <h1>Purchase Bill</h1>
+            <p>Create and manage purchase bills</p>
+        </div>
+
+        <button type="button" class="btn-secondary">
+            Back
+        </button>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs">
+        <button type="button" class="tab active">Purchase Bill</button>
+        <!--<button type="button" class="tab">Purchase History</button>-->
+    </nav>
+
+    <!-- Purchase Bill Form -->
+    <section class="form-section">
+        <h2>Item Details</h2>
+
+        <form class="item-form" (ngSubmit)="addItem()">
+
+            <!-- Item Name -->
+            <div class="form-group">
+                <label for="item">Item Name *</label>
+
+                <input type="text" id="item" name="item" [(ngModel)]="item" list="itemList"
+                    placeholder="Search or select item" required />
+
+                <datalist id="itemList">
+                    <option value="Mango"></option>
+                    <option value="Apple"></option>
+                    <option value="Banana"></option>
+                    <option value="Orange"></option>
+                    <option value="Grapes"></option>
+                    <option value="Kiwi"></option>
+                    <option value="Strawberry"></option>
+                </datalist>
+            </div>
+
+            <!-- Batch / Location -->
+            <div class="form-group">
+                <label for="batch">Batch / Location *</label>
+
+                <select id="batch" name="batch" [(ngModel)]="batch" required>
+                    <option value="">Select Batch</option>
+
+                    <option *ngFor="let location of locations" [value]="location.Location_Name">
+                        {{ location.Location_Name }}
+                    </option>
+                </select>
+            </div>
+
+            <!-- Standard Cost -->
+            <div class="form-group">
+                <label for="standardCost">Standard Cost *</label>
+
+                <input type="number" id="standardCost" name="standardCost" [(ngModel)]="standardCost" min="0"
+                    required />
+            </div>
+
+            <!-- Standard Price -->
+            <div class="form-group">
+                <label for="standardPrice">Standard Price *</label>
+
+                <input type="number" id="standardPrice" name="standardPrice" [(ngModel)]="standardPrice" min="0"
+                    required />
+            </div>
+
+            <!-- Margin -->
+            <div class="form-group">
+                <label>Margin</label>
+
+                <input type="text" [value]="standardPrice - standardCost" readonly />
+            </div>
+
+            <!-- Quantity -->
+            <div class="form-group">
+                <label for="quantity">Quantity *</label>
+
+                <input type="number" id="quantity" name="quantity" [(ngModel)]="quantity" min="1" required />
+            </div>
+
+            <!-- Free Quantity -->
+            <div class="form-group">
+                <label for="freeQty">Free Quantity</label>
+
+                <input type="number" id="freeQty" name="freeQty" [(ngModel)]="freeQty" min="0" />
+            </div>
+
+            <!-- Discount -->
+            <div class="form-group">
+                <label for="discount">Discount (%)</label>
+
+                <input type="number" id="discount" name="discount" [(ngModel)]="discount" min="0" max="100" />
+            </div>
+
+            <!-- Add Button -->
+            <div class="form-group button-group">
+                <button type="submit" class="btn-primary">
+                    + Add Item
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- Purchase Items Table -->
+    <section class="table-section">
+
+        <h2>Purchase Items</h2>
+
+        <div class="table-container">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Item</th>
+                        <th>Batch</th>
+                        <th>Standard Cost</th>
+                        <th>Standard Price</th>
+                        <th>Quantity</th>
+                        <th>Free Qty</th>
+                        <th>Discount (%)</th>
+                        <th>Total Cost</th>
+                        <th>Total Selling</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr *ngFor="let billItem of billItems; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ billItem.item }}</td>
+                        <td>{{ billItem.batch }}</td>
+                        <td>{{ billItem.standardCost | number:'1.2-2' }}</td>
+                        <td>{{ billItem.standardPrice | number:'1.2-2' }}</td>
+                        <td>{{ billItem.quantity }}</td>
+                        <td>{{ billItem.freeQty }}</td>
+                        <td>{{ billItem.discount }}%</td>
+                        <td>{{ billItem.totalCost | number:'1.2-2' }}</td>
+                        <td>{{ billItem.totalSelling | number:'1.2-2' }}</td>
+                    </tr>
+
+                    <!-- Empty Table Message -->
+                    <tr *ngIf="billItems.length === 0">
+                        <td colspan="10" class="empty-message">
+                            No items added yet.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </section>
+
+    <!-- Bill Summary -->
+    <section class="summary-section">
+
+        <h2>Bill Summary</h2>
+
+        <div class="summary-grid">
+
+            <div class="summary-card">
+                <span>Total Items</span>
+                <strong>{{ billItems.length }}</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Total Quantity</span>
+                <strong>{{ totalQuantity }}</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Total Cost</span>
+                <strong>{{ totalCost | number:'1.2-2' }}</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Total Selling</span>
+                <strong>{{ totalSelling | number:'1.2-2' }}</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+```

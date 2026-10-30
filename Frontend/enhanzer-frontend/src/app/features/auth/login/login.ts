@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 import { Auth } from '../../../core/services/auth';
 import { LoginResponse } from '../../../core/models/auth.model';
 //import { LoginResponse } from '../../../core/models/auth.model';
+import { Router } from '@angular/router';
+import { Session } from '../../../core/services/session';
 
 @Component({
   selector: 'app-login',
@@ -27,7 +29,9 @@ export class Login {
 
   constructor(
     private fb: FormBuilder,
-    private authService: Auth
+    private authService: Auth,
+    private session: Session,
+    private router: Router
   ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -55,10 +59,20 @@ export class Login {
 
         console.log('Login response:', response);
         console.log('User locations:', response.locations);
+
+        // Save login session
+        this.session.login();
+
+        // Navigate to Purchase Bill page
+        this.router.navigate(['/purchase-bill']);
       },
 
       error: (error) => {
         this.loading = false;
+
+        console.log('HTTP Status:', error.status);
+        console.log('Full error:', error);
+        console.log('Backend response:', error.error);
 
         this.errorMessage =
           error.error?.message || 'Login failed. Please try again.';
