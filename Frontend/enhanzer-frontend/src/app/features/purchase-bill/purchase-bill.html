@@ -49,8 +49,8 @@
                 <select id="batch" name="batch" [(ngModel)]="batch" required>
                     <option value="">Select Batch</option>
 
-                    <option *ngFor="let location of locations" [value]="location.Location_Name">
-                        {{ location.Location_Name }}
+                    <option *ngFor="let location of locations" [value]="location.location_Name">
+                        {{ location.location_Name }}
                     </option>
                 </select>
             </div>
