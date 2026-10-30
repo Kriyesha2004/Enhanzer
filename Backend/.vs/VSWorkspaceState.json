@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Enhanzer.API",
+    "\\Enhanzer.API\\Enhanzer.API"
   ],
   "PreviewInSolutionExplorer": false
 }
