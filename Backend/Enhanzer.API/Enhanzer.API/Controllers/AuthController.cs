@@ -53,6 +53,9 @@ namespace Enhanzer.API.Controllers
                 var responseBody =
                     await response.Content.ReadAsStringAsync();
 
+                Console.WriteLine("ENHANZER RAW RESPONSE:");
+                Console.WriteLine(responseBody);
+
                 var loginResponse =
                     JsonSerializer.Deserialize<EnhanzerLoginResponse>(
                         responseBody,
