@@ -73,8 +73,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAGUVAAAAAAAAAAAkwGgVAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-10-30T16:16:26.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T16:16:26.984Z"
             },
             {
               "$type": "Document",
@@ -84,7 +83,7 @@
               "RelativeDocumentMoniker": "Enhanzer.API\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Enhanzer.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-30T11:23:08.128Z",
               "EditorCaption": ""
@@ -99,8 +98,7 @@
               "RelativeToolTip": "Enhanzer.API\\DTOs\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:17:11.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T11:17:11.584Z"
             },
             {
               "$type": "Document",
@@ -112,8 +110,7 @@
               "RelativeToolTip": "Enhanzer.API\\Services\\AuthService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAkwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:19:37.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T11:19:37.554Z"
             },
             {
               "$type": "Document",
@@ -125,8 +122,7 @@
               "RelativeToolTip": "Enhanzer.API\\DTOs\\EnhanzerLoginResponse.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:35:46.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T11:35:46.174Z"
             },
             {
               "$type": "Document",
@@ -138,8 +134,7 @@
               "RelativeToolTip": "Enhanzer.API\\DTOs\\EnhanzerLoginRequest.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:18:07.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T11:18:07.537Z"
             },
             {
               "$type": "Document",
@@ -151,8 +146,7 @@
               "RelativeToolTip": "Enhanzer.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T10:55:05.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T10:55:05.144Z"
             },
             {
               "$type": "Document",
@@ -224,8 +218,7 @@
               "RelativeToolTip": "Enhanzer.API\\Enhanzer.API.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-30T10:50:14.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T10:50:14.929Z"
             }
           ]
         }
