@@ -131,6 +131,7 @@ C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\o
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\Enhanzer.API.csproj.CoreCompileInputs.cache
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\Enhanzer.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\Enhanzer.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\Enhanzer.API.sourcelink.json
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -138,7 +139,6 @@ C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\o
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\scopedcss\scopedcss.cache
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\scopedcss\bundle\Enhanzer.API.styles.css
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\compressed\vt9xtf5fnb-{0}-s9y91u5nkn-s9y91u5nkn.gz
-C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\compressed\cwey7wq612-{0}-je1dwpfutq-je1dwpfutq.gz
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\compressed\zpo113m4fn-{0}-lvkpp2i49p-lvkpp2i49p.gz
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\compressed\otxvwge1ua-{0}-scyj3pnqhf-scyj3pnqhf.gz
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\staticwebassets.build.json
@@ -153,3 +153,4 @@ C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\o
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\Enhanzer.API.pdb
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\Enhanzer.API.genruntimeconfig.cache
 C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\ref\Enhanzer.API.dll
+C:\Users\LAPTOP ISLAND\Desktop\Self Enhanzer\Backend\Enhanzer.API\Enhanzer.API\obj\Debug\net10.0\compressed\cwey7wq612-{0}-7bugbda3o1-7bugbda3o1.gz
