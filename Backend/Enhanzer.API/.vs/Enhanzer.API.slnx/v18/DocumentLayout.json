@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\dtos\\enhanzerloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -77,13 +77,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Enhanzer.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAwI0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-30T11:23:08.128Z",
               "EditorCaption": ""
@@ -102,16 +102,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Services\\AuthService.cs",
               "RelativeToolTip": "Enhanzer.API\\Services\\AuthService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwCIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:19:37.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T11:19:37.554Z"
             },
             {
               "$type": "Document",
