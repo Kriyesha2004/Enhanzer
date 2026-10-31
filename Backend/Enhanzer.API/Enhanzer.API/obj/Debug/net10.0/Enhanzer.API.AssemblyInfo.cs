@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Enhanzer.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79caea72cafd93ca916c336f4f7fbd549eac8a3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c9d477f2f246016d0a072392a04febc99dc10a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Enhanzer.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Enhanzer.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
