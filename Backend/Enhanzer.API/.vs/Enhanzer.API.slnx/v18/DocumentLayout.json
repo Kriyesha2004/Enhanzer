@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\dtos\\enhanzerloginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\dtos\\enhanzerloginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\dtos\\enhanzerloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\dtos\\enhanzerloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\dtos\\enhanzerloginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\dtos\\enhanzerloginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\controllers\\locationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\controllers\\locationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -28,10 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\controllers\\locationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|solutionrelative:enhanzer.api\\controllers\\locationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37012EF2-A048-9A52-7CCB-B84600956275}|Enhanzer.API\\Enhanzer.API.csproj|c:\\users\\laptop island\\desktop\\self enhanzer\\backend\\enhanzer.api\\enhanzer.api\\enhanzer.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -61,11 +61,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -77,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\Controllers\\AuthController.cs",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\DTOs\\LoginRequest.cs",
@@ -102,27 +102,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Services\\AuthService.cs",
               "RelativeToolTip": "Enhanzer.API\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwCIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:19:37.554Z"
+              "WhenOpened": "2026-10-30T11:19:37.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EnhanzerLoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\DTOs\\EnhanzerLoginResponse.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\DTOs\\EnhanzerLoginResponse.cs",
               "ToolTip": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\DTOs\\EnhanzerLoginResponse.cs",
               "RelativeToolTip": "Enhanzer.API\\DTOs\\EnhanzerLoginResponse.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:35:46.174Z"
+              "WhenOpened": "2026-10-30T11:35:46.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -134,11 +136,12 @@
               "RelativeToolTip": "Enhanzer.API\\DTOs\\EnhanzerLoginRequest.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:18:07.537Z"
+              "WhenOpened": "2026-10-30T11:18:07.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Program.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\Program.cs",
@@ -150,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "LocationsController.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP ISLAND\\Desktop\\Self Enhanzer\\Backend\\Enhanzer.API\\Enhanzer.API\\Controllers\\LocationsController.cs",
               "RelativeDocumentMoniker": "Enhanzer.API\\Controllers\\LocationsController.cs",
@@ -158,7 +161,8 @@
               "RelativeToolTip": "Enhanzer.API\\Controllers\\LocationsController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:03:56.87Z"
+              "WhenOpened": "2026-10-30T11:03:56.87Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
