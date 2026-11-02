@@ -1,7 +1,7 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../../environments/environment';
 
 export interface AppLocation {
   locationId: number;
@@ -13,7 +13,7 @@ export interface AppLocation {
   providedIn: 'root'
 })
 export class Locations {
-  private apiUrl = 'https://localhost:7029/api/Locations';
+  private apiUrl = `${environment.apiUrl}/Locations`;
 
   constructor(private http: HttpClient) { }
 
