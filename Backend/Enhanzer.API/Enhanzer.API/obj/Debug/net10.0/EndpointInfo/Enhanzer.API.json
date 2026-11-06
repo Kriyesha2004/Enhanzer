@@ -47,10 +47,97 @@
           }
         }
       }
+    },
+    "/api/PurchaseOrders": {
+      "post": {
+        "tags": [
+          "PurchaseOrders"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePurchaseOrderRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePurchaseOrderRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePurchaseOrderRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "PurchaseOrders"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PurchaseOrders/{id}": {
+      "get": {
+        "tags": [
+          "PurchaseOrders"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "CreatePurchaseOrderRequest": {
+        "type": "object",
+        "properties": {
+          "orderDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "netAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PurchaseOrderItemInputDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequest": {
         "type": "object",
         "properties": {
@@ -64,6 +151,52 @@
           }
         },
         "additionalProperties": false
+      },
+      "PurchaseOrderItemInputDto": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemName": {
+            "type": "string",
+            "nullable": true
+          },
+          "batch": {
+            "type": "string",
+            "nullable": true
+          },
+          "standardCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "standardPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double"
+          },
+          "freeQty": {
+            "type": "number",
+            "format": "double"
+          },
+          "discount": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalSelling": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
       }
     }
   },
@@ -73,6 +206,9 @@
     },
     {
       "name": "Locations"
+    },
+    {
+      "name": "PurchaseOrders"
     }
   ]
 }

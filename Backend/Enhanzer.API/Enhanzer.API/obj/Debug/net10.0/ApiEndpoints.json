@@ -24,5 +24,47 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Enhanzer.API.Controllers.PurchaseOrdersController",
+    "Method": "CreatePurchaseOrder",
+    "RelativePath": "api/PurchaseOrders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Enhanzer.API.DTOs.CreatePurchaseOrderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Enhanzer.API.Controllers.PurchaseOrdersController",
+    "Method": "GetAllPurchaseOrders",
+    "RelativePath": "api/PurchaseOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Enhanzer.API.Controllers.PurchaseOrdersController",
+    "Method": "GetPurchaseOrderById",
+    "RelativePath": "api/PurchaseOrders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
