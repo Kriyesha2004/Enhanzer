@@ -1,0 +1,238 @@
+<div class="ez-app-layout">
+
+  <!-- ================= TOP NAVBAR ================= -->
+  <header class="ez-topbar">
+    <div class="topbar-left">
+      <div class="ez-brand">
+        <span class="brand-arrow">&raquo;</span>
+        <span class="brand-text">eZuite</span>
+      </div>
+
+      <div class="topbar-nav-pill">
+        <span class="home-icon">&#8962;</span>
+        <span class="nav-title">Dashboard fv</span>
+        <span class="caret">&#9662;</span>
+      </div>
+
+      <button type="button" class="btn-topbar-tool" title="Settings">
+        &#9881;
+      </button>
+    </div>
+
+    <div class="topbar-right">
+      <!-- Direct button to Purchase Bill page -->
+      <button type="button" class="btn-new-bill" (click)="goToPurchaseBill()">
+        <span class="plus-icon">+</span>
+        <span>Purchase Bill</span>
+      </button>
+
+      <div class="topbar-org">
+        <span class="org-icon">&#127970;</span>
+        <span class="org-text">My Organization</span>
+        <span class="caret">&#9662;</span>
+      </div>
+
+      <div class="topbar-icon-wrap" title="Notifications">
+        <span class="topbar-icon">&#128276;</span>
+        <span class="badge-count">20</span>
+      </div>
+
+      <div class="topbar-icon-wrap" title="Filters">
+        <span class="topbar-icon">&#9881;</span>
+      </div>
+
+      <div class="topbar-icon-wrap" title="Help">
+        <span class="topbar-icon">&#10067;</span>
+      </div>
+
+      <!-- User Avatar with logout -->
+      <button type="button" class="user-avatar" title="Click to Logout" (click)="logout()">
+        A
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= BODY: SIDEBAR + MAIN CONTENT ================= -->
+  <div class="ez-body-container">
+
+    <!-- Left Sidebar -->
+    <aside class="ez-sidebar">
+      <div class="sidebar-menu">
+        <button
+          *ngFor="let item of sidebarNav"
+          type="button"
+          class="sidebar-item"
+          [class.active]="item.active"
+          (click)="onSidebarClick(item)"
+          [title]="item.label">
+          <span class="sidebar-icon">{{ item.icon }}</span>
+          <span class="sidebar-label">{{ item.label }}</span>
+        </button>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="version">V 5.0</div>
+        <div class="copyright">&copy; eZuite</div>
+      </div>
+    </aside>
+
+    <!-- Main Dashboard Area -->
+    <main class="ez-main-content">
+      <div class="dashboard-grid">
+
+        <!-- ================= CARD 1: ORDERS ================= -->
+        <section class="dash-card orders-card">
+          <div class="card-header">
+            <div class="card-title-group">
+              <h2>Orders</h2>
+            </div>
+
+            <div class="header-right-action">
+              <span class="filter-dropdown">Today &#9662;</span>
+            </div>
+          </div>
+
+          <div class="card-subtitle">
+            <span>{{ databaseOrders.length }} orders in database</span>
+          </div>
+
+          <div *ngIf="loadingOrders" class="loading-state">
+            Loading orders from database...
+          </div>
+
+          <div *ngIf="!loadingOrders && databaseOrders.length === 0" class="empty-state">
+            <p>No purchase orders saved in database yet.</p>
+            <button type="button" class="btn-create-inline" (click)="goToPurchaseBill()">
+              Create First Purchase Bill &rarr;
+            </button>
+          </div>
+
+          <div *ngIf="!loadingOrders && databaseOrders.length > 0" class="table-responsive">
+            <table class="ez-table">
+              <thead>
+                <tr>
+                  <th>Order No</th>
+                  <th>Product / Items</th>
+                  <th>Date</th>
+                  <th>Total Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let order of databaseOrders">
+                  <td class="col-orderno">ORD-{{ order.purchaseOrderId }}</td>
+                  <td class="col-product">
+                    <span *ngFor="let item of order.items; let last = last">
+                      {{ item.itemName }} (x{{ item.quantity }}){{ !last ? ', ' : '' }}
+                    </span>
+                  </td>
+                  <td class="col-date">{{ order.orderDate | date:'mediumDate' }}</td>
+                  <td class="col-days">
+                    <strong class="price-val">${{ order.netAmount | number:'1.2-2' }}</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Card Bottom Action: Link to Purchase Bill page -->
+          <div class="card-footer-action">
+            <button type="button" class="btn-outline-primary" (click)="goToPurchaseBill()">
+              <span>Go to Purchase Bill Page</span> &rarr;
+            </button>
+          </div>
+        </section>
+
+        <!-- ================= CARD 2: BANK ACCOUNTS ================= -->
+        <section class="dash-card bank-card">
+          <div class="card-header">
+            <h2>Bank Accounts</h2>
+            <span class="filter-dropdown">Today &#9662;</span>
+          </div>
+
+          <div class="bank-list">
+            <div *ngFor="let acc of bankAccounts" class="bank-item">
+              <div class="bank-left">
+                <div class="bank-icon-box">&#127963;</div>
+                <div class="bank-details">
+                  <div class="bank-name">{{ acc.name }}</div>
+                  <div class="bank-meta">{{ acc.system }}</div>
+                  <div class="bank-meta-sub">{{ acc.updatedAgo }}</div>
+                  <div *ngIf="acc.reviewed" class="reviewed-pill">Reviewed</div>
+                </div>
+              </div>
+
+              <div class="bank-right">
+                <span class="bank-amount" [class.negative]="acc.isNegative">
+                  {{ acc.currency }} {{ acc.amount }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CARD 3: EXPENSES ================= -->
+        <section class="dash-card expenses-card">
+          <div class="card-header">
+            <h2>Expenses</h2>
+            <span class="filter-dropdown">Today &#9662;</span>
+          </div>
+
+          <div class="expenses-summary">
+            <div class="expenses-big-total">{{ totalExpenses }}</div>
+            <div class="expenses-sub">Total expenses</div>
+          </div>
+
+          <!-- Donut Chart -->
+          <div class="donut-chart-container">
+            <svg viewBox="0 0 160 160" class="donut-svg">
+              <!-- Background circle -->
+              <circle cx="80" cy="80" r="54" fill="transparent" stroke="#f1f5f9" stroke-width="26" />
+
+              <!-- Cyan Segment: 55% -> stroke-dasharray="186 339" stroke-dashoffset="0" -->
+              <circle
+                cx="80" cy="80" r="54" fill="transparent"
+                stroke="#00a8cc" stroke-width="26"
+                stroke-dasharray="186 339" stroke-dashoffset="0"
+                transform="rotate(-90 80 80)" />
+
+              <!-- Dark Blue Segment: 33% -> stroke-dasharray="112 339" stroke-dashoffset="-186" -->
+              <circle
+                cx="80" cy="80" r="54" fill="transparent"
+                stroke="#00508f" stroke-width="26"
+                stroke-dasharray="112 339" stroke-dashoffset="-186"
+                transform="rotate(-90 80 80)" />
+
+              <!-- Navy Segment: 6% -> stroke-dasharray="21 339" stroke-dashoffset="-298" -->
+              <circle
+                cx="80" cy="80" r="54" fill="transparent"
+                stroke="#1b2a47" stroke-width="26"
+                stroke-dasharray="21 339" stroke-dashoffset="-298"
+                transform="rotate(-90 80 80)" />
+
+              <!-- Green Segment: 6% -> stroke-dasharray="20 339" stroke-dashoffset="-319" -->
+              <circle
+                cx="80" cy="80" r="54" fill="transparent"
+                stroke="#2ec4b6" stroke-width="26"
+                stroke-dasharray="20 339" stroke-dashoffset="-319"
+                transform="rotate(-90 80 80)" />
+            </svg>
+          </div>
+
+          <!-- Category Legend -->
+          <div class="expenses-legend">
+            <div *ngFor="let cat of expenseCategories" class="legend-item">
+              <span class="legend-color-dot" [style.background-color]="cat.color"></span>
+              <div class="legend-text">
+                <strong class="legend-amount">{{ cat.amount }}</strong>
+                <span class="legend-title">{{ cat.code }} {{ cat.title }}</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+</div>
+

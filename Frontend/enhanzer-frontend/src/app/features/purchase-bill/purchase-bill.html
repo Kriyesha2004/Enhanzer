@@ -7,9 +7,14 @@
             <p>Create and manage purchase bills</p>
         </div>
 
-        <button type="button" class="btn-secondary" (click)="goToLogin()">
-            Back
-        </button>
+        <div class="header-actions">
+            <button type="button" class="btn-dashboard" (click)="goToDashboard()">
+                📊 Go to Dashboard
+            </button>
+            <button type="button" class="btn-secondary" (click)="goToLogin()">
+                Logout / Back
+            </button>
+        </div>
     </header>
 
     <!-- Navigation Tabs -->
@@ -192,5 +197,32 @@
 
     </section>
 
+    <!-- Payment & Database Save Action -->
+    <section class="checkout-section">
+        <div class="checkout-card">
+            <div class="checkout-info">
+                <h3>Bill Payment & Record Saving</h3>
+                <p>Submit and record this bill into the SQL Server <code>Purchase_Orders</code> and <code>Purchase_Order_Items</code> tables.</p>
+            </div>
+
+            <div *ngIf="orderSuccessMessage" class="alert-box alert-success">
+                ✅ {{ orderSuccessMessage }} Redirecting to Dashboard...
+            </div>
+
+            <div *ngIf="orderErrorMessage" class="alert-box alert-danger">
+                ❌ {{ orderErrorMessage }}
+            </div>
+
+            <div class="checkout-actions">
+                <button type="button" 
+                        class="btn-save-bill" 
+                        [disabled]="billItems.length === 0 || savingOrder"
+                        (click)="payAndSaveBill()">
+                    <span *ngIf="!savingOrder">💳 Pay & Save Purchase Bill (${{ totalCost | number:'1.2-2' }})</span>
+                    <span *ngIf="savingOrder">⏳ Saving to Database...</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
 </div>
-```

@@ -37,6 +37,25 @@
                 {{ loading ? 'Signing in...' : 'Login' }}
             </button>
 
+            <!-- Quick link to Dashboard and Purchase Bill -->
+            <div class="quick-access">
+                <div class="divider">
+                    <span>QUICK ACCESS</span>
+                </div>
+                <div class="quick-buttons">
+                    <button type="button" class="btn-dashboard-nav" (click)="goToDashboard()">
+                        📊 Go to eZuite Dashboard &rarr;
+                    </button>
+                    <button type="button" class="btn-purchase-bill" (click)="goToPurchaseBill()">
+                        🛒 Go to Purchase Bill Page &rarr;
+                    </button>
+                </div>
+                <div class="demo-hint">
+                    <small>Default credentials: <code>info&#64;enhanzer.com</code> / <code>Welcome#5</code></small>
+                    <button type="button" class="btn-demo-fill" (click)="fillDemoCredentials()">Auto-fill</button>
+                </div>
+            </div>
+
         </form>
     </div>
 </div>

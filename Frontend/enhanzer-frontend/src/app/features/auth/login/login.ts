@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import {
   FormBuilder,
@@ -10,7 +9,6 @@ import { CommonModule } from '@angular/common';
 
 import { Auth } from '../../../core/services/auth';
 import { LoginResponse } from '../../../core/models/auth.model';
-//import { LoginResponse } from '../../../core/models/auth.model';
 import { Router } from '@angular/router';
 import { Session } from '../../../core/services/session';
 
@@ -38,7 +36,6 @@ export class Login {
       password: ['', Validators.required]
     });
   }
-
 
   onSubmit(): void {
     this.errorMessage = '';
@@ -68,8 +65,8 @@ export class Login {
         // Save login session
         this.session.login();
 
-        // Navigate to Purchase Bill page
-        this.router.navigate(['/purchase-bill']);
+        // Navigate to Dashboard
+        this.router.navigate(['/dashboard']);
       },
 
       error: (error) => {
@@ -82,6 +79,23 @@ export class Login {
         this.errorMessage =
           error.error?.message || 'Login failed. Please try again.';
       }
+    });
+  }
+
+  goToPurchaseBill(): void {
+    this.session.login();
+    this.router.navigate(['/purchase-bill']);
+  }
+
+  goToDashboard(): void {
+    this.session.login();
+    this.router.navigate(['/dashboard']);
+  }
+
+  fillDemoCredentials(): void {
+    this.loginForm.patchValue({
+      email: 'info@enhanzer.com',
+      password: 'Welcome#5'
     });
   }
 }
