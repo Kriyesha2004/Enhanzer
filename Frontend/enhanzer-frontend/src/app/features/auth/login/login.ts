@@ -51,7 +51,12 @@ export class Login {
 
     this.loading = true;
 
-    this.authService.login(this.loginForm.value).subscribe({
+    const request = {
+      email: this.loginForm.value.email.trim(),
+      password: this.loginForm.value.password
+    };
+
+    this.authService.login(request).subscribe({
       next: (response: LoginResponse) => {
         this.loading = false;
 

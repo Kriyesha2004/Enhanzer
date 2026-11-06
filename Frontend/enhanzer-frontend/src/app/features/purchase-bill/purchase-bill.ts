@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppLocation, Locations } from '../../core/services/locations';
+import { Router } from '@angular/router';
+
 
 interface BillItem {
   item: string;
@@ -41,11 +43,20 @@ export class PurchaseBill implements OnInit {
   // Added bill items
   billItems: BillItem[] = [];
 
-  constructor(private locationsService: Locations) { }
+  constructor(
+    private locationsService: Locations,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.loadLocations();
   }
+
+  goToLogin(): void {
+    this.router.navigate(['/']);
+  }
+
+
 
   // Load batch names from backend
   loadLocations(): void {
